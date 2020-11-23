@@ -18,7 +18,8 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "Log_Main";
-    private  List<Integer> imagenes;
+    private List<Integer> imagenes;
+
 
 
 
@@ -31,8 +32,15 @@ public class MainActivity extends AppCompatActivity {
     @OnClick({R.id.imageViewLeft, R.id.imageViewCenter, R.id.imageViewRight}) void submit() {
         // TODO call server...
         //Log.d(TAG, "Pasó por el onClick");
-        Collections.shuffle(imagenes);
+        entregarObsequio();
 
+
+    }
+
+    private void entregarObsequio() {
+        Collections.shuffle(imagenes);
+        imgResults.setImageResource(imagenes.get(0));
+        imgResults.setVisibility(textView.VISIBLE);
     }
 
     @Override
