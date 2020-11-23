@@ -40,6 +40,7 @@
 
     <TextView
         style="@style/header"
+        android:id="@+id/tvObsequio"
         android:layout_width="290dp"
         android:layout_height="84dp"
         android:layout_marginTop="8dp"
@@ -95,5 +96,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLeft"
         app:srcCompat="@drawable/ic_gift_pizza" />
+
+    <ImageButton
+        android:id="@+id/btnRePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_replay" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
